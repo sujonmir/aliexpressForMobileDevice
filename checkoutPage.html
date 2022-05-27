@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="AliExpress is a big ecommerce web site. Here people can buy any kind of products">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/checkoutPage.css">
+	<title>Checkout page</title>
+</head>
+<body>
+ <!----header start---->
+ <header class="py px flex align-center">
+ 	<a class="back" href="singleProductPage.html" target="_blank">
+ 		<svg id="icon-icBack" viewBox="0 0 1024 1024"><path d="M896 480l-633.749333 0.661333 307.413333-307.413333L524.416 128 192.533333 459.861333A74.176 74.176 0 0 0 170.666667 512.661333c0 19.946667 7.765333 38.698667 21.866666 52.8l331.882667 331.861334 45.248-45.248-307.413333-307.413334L896 544v-64z"></path></svg>
+ 	</a>
+ 	<strong>Order Confirmation</strong>
+ </header> <!--------header close----->
+<!--product sort info start-->
+ <section class="checkoutPage_iar_product_sort_info flex px">
+   <figure class="checkoutPage_iar_product_img pr">
+   	<img src="img/mouse.png" alt="wareless mouse">
+   </figure>
+   <div class="checkoutPage_iar_product_caption flex flex-column jusitfy-between bb">
+   	 <p class="info">2.4GHz Wireless Gaming Mouse Rechargeable Mouse with RGB Light Effect 3 Adjustable DPI Hollowed-out Honeycomb mouse Mice For PC</p>
+   	 <div class="checkoutPage_iar_product_label_&_qtt flex justify-between">
+   	  <div class="checkoutPage_product_price_and_color">
+   	  	<p><strong> US $<span id="price_value">13.90</span></strong></p>
+   	  	<p>Green, CN</p>
+   	  </div>
+   	  <div class="quantity_function_wrapper flex align-center">
+	   <button id="minus_btn" type="button" disabled="disabled">
+		<svg id="icon-icSubtractFill" viewBox="0 0 1024 1024"><path d="M925.909333 554.325333l-0.832 7.573334c-22.570667 191.402667-178.389333 344.96-370.752 364.010666-262.954667 26.026667-482.261333-193.28-456.234666-456.234666 19.306667-194.901333 176.682667-352.277333 371.584-371.584 262.933333-26.026667 482.261333 193.301333 456.234666 456.234666zM704 544v-64H320v64h384z"></path><path d="M936.533333 555.413333l-0.853333  .573334c-23.04 196.394667-182.912 353.984-380.266667 373.546666C285.717333 963.2 60.8 738.261333 87.488 468.565333c19.797333-199.893333 181.205333-361.301333 381.098667-381.098666 269.674667-26.709333 494.634667 198.250667 467.925333 467.925333z m-63.082666-13.184c18.261333-226.410667-171.370667-413.546667-398.570667-391.04-169.514667 16.768-306.922667 154.176-323.712 323.690667C128.448 704.426667 319.594667 895.573333 549.12 872.832c167.061333-16.554667 302.933333-150.229333 322.901333-316.373333l0.810667-7.338667 0.618667-6.890667z"></path></svg>
+	   </button>
+	   <span class="quantity_value">1</span>
+	   <button id="plus_btn" type="button">
+		<svg id="icon-icAddFill" viewBox="0 0 1024 1024"><path d="M555.413333 87.466667l7.573334 0.853333c196.394667 23.04 353.984 182.912 373.546666 380.266667 26.666667 269.696-198.250667 494.634667-467.946666 467.925333-199.893333-19.797333-361.301333-181.205333-381.098667-381.098667C60.778667 285.738667 285.738667 60.8 555.413333 87.488zM544 320h-64v160H320v64h160V704h64v-160H704v-64h-160V320z"></path></svg>
+	   </button>
+	  </div> <!------quantity function wrapper close--->
+   	 </div> <!------checkoutPage iar product label and quantity close--->
+   </div> <!------checkoutPage iar product caption close--->
+ </section> <!--product sort info close-->
+<!--checkout shipping charge section start-->
+ <section class="checkoutPage_iar_shipping_charge pr py flex justify-between bb" id="shipping_charge_modal_btn">
+  <div class="delevery_days_shipping_charge">
+  	<p>Us $ <span id="shipping_charge_val">113.66</span></p>
+  	<p>via DHL in 7 - 15 days</p>
+  </div>
+   <svg id="icon-icArrowRight" viewBox="0 0 1024 1024"><path d="M635.882667 512L319.445333 808.661333l43.776 46.677334 341.333334-320a32 32 0 0 0 0-46.677334l-341.333334-320-43.776 46.677334L635.882667 512z"></path></svg>
+ </section> <!--checkout shipping charge section close-->
+<!--checkout shipping charge modal---->
+ <section class="checkoutPage_iar_shipping_modal px pt w-100" id="shipping_modal">
+ 	<div class="shipping_modal_close_btn flex align-center">
+ 	  <svg class="icon-icClose" viewBox="0 0 1024 1024"><path d="M816.725333 168.085333L861.994667 213.333333 560.277333 515.029333l301.717334 301.696-45.269334 45.269334-301.696-301.717334L213.333333 861.994667l-45.248-45.269334L469.76 515.029333 168.085333 213.333333 213.333333 168.085333 515.029333 469.76z"></path></svg>
+ 	  <h4>Shipping</h4>	
+ 	</div>
+ 	<div class="shipping_info flex align-center justify-between">
+ 	 <div>
+ 	 	<p>Shipping: US $113.66</p>
+ 	 	<p>To <span>Bangladesh</span> via Couriar Service</p>
+ 	 	<p>Estimated Delivery: 7-15 days</p>
+ 	 	<p>Tracking Available</p>
+ 	 </div>
+ 	 <span class="circle_icon"></span>
+ 	</div>
+ </section>
+<!--message to seller section start-->
+<section class="checkoutPage_iar_message_to_seller px">
+ <div class="py bb">
+   <div class="flex justify-between inner" id="messge_modal_btn">
+   	<p>Message to seller</p>
+    <svg id="icon-icArrowRight" viewBox="0 0 1024 1024"><path d="M635.882667 512L319.445333 808.661333l43.776 46.677334 341.333334-320a32 32 0 0 0 0-46.677334l-341.333334-320-43.776 46.677334L635.882667 512z"></path></svg>
+   </div>
+ </div>
+</section> <!--message to seller section close-->
+<!--message to seller modal-->
+<section class="checkoutPage_iar_shipping_modal px pt w-100" id="message_modal">
+ 	<div class="shipping_modal_close_btn flex justify-between align-center">
+ 	  <div class="flex align-center">
+ 	  	<svg class="icon-icClose" viewBox="0 0 1024 1024"><path d="M816.725333 168.085333L861.994667 213.333333 560.277333 515.029333l301.717334 301.696-45.269334 45.269334-301.696-301.717334L213.333333 861.994667l-45.248-45.269334L469.76 515.029333 168.085333 213.333333 213.333333 168.085333 515.029333 469.76z"></path></svg>
+ 	   <b>Message to seller</b>
+ 	  </div>	
+ 	  <p class="btn_close">Done</p>
+ 	</div>
+ 	<form class="shipping_info">
+ 	 <textarea name="" id="textarea" placeholder="Message Here"></textarea>
+ 	</form>
+ </section>
+<!--checkoutPage adress sectio start-->
+<section class="chekoutPage_iar_address px">
+	<div id="shipping_address_modal_btn" class="checkPage_iar_address_inner flex justify-between align-center py bb">
+	  <div class="section_inner flex">
+	  	<span>Address</span>
+	  	<span>
+	  	 <p>Sujon Mir</p>
+	  	 <p>Munshiganj</p>
+	  	 <p>Dhaka Dhaka</p>
+	  	 <p>BD</p>
+	  	</span>
+	  </div>
+	  <svg id="icon-icArrowRight" viewBox="0 0 1024 1024"><path d="M635.882667 512L319.445333 808.661333l43.776 46.677334 341.333334-320a32 32 0 0 0 0-46.677334l-341.333334-320-43.776 46.677334L635.882667 512z"></path></svg>
+	</div>
+</section> <!-------checkoutPage address section close---->
+<!--checkoutPage address modal--->
+<section class="checkoutPage_iar_shipping_modal px w-100" id="address_modal">
+  <div class="checkoutPage_shippingAddress bb pt">
+  	<div class="shipping_modal_close_btn flex justify-between align-center">
+ 	  <div class="flex align-center">
+ 	  	<svg class="icClose" viewBox="0 0 1024 1024"><path d="M816.725333 168.085333L861.994667 213.333333 560.277333 515.029333l301.717334 301.696-45.269334 45.269334-301.696-301.717334L213.333333 861.994667l-45.248-45.269334L469.76 515.029333 168.085333 213.333333 213.333333 168.085333 515.029333 469.76z"></path></svg>
+ 	   <b>Shipping Address</b>
+ 	  </div>	
+ 	  <p class="btn_edit">Edit</p>
+ 	</div>
+	  <span id="newAddressBtn">Add a new address</span>
+  </div>
+  <div class="shipping_destination_info flex align-center justify-between bb">
+    <div class="delete_icon_and_listing flex align-center w-100">
+    	<svg id="icon-icSubtractFill" class="icSubtractFill" viewBox="0 0 1024 1024"><path d="M925.909333 554.325333l-0.832 7.573334c-22.570667 191.402667-178.389333 344.96-370.752 364.010666-262.954667 26.026667-482.261333-193.28-456.234666-456.234666 19.306667-194.901333 176.682667-352.277333 371.584-371.584 262.933333-26.026667 482.261333 193.301333 456.234666 456.234666zM704 544v-64H320v64h384z"></path><path d="M936.533333 555.413333l-0.853333  .573334c-23.04 196.394667-182.912 353.984-380.266667 373.546666C285.717333 963.2 60.8 738.261333 87.488 468.565333c19.797333-199.893333 181.205333-361.301333 381.098667-381.098666 269.674667-26.709333 494.634667 198.250667 467.925333 467.925333z m-63.082666-13.184c18.261333-226.410667-171.370667-413.546667-398.570667-391.04-169.514667 16.768-306.922667 154.176-323.712 323.690667C128.448 704.426667 319.594667 895.573333 549.12 872.832c167.061333-16.554667 302.933333-150.229333 322.901333-316.373333l0.810667-7.338667 0.618667-6.890667z"></path></svg>
+		<ul class="shipping_details">
+		 <li class="user_name">Sujon Mir</li>
+		 <li class="user_dist">Munshiganj</li>
+		 <li class="user_city">Dhaka</li>
+		 <li class="user_country">Dhaka, BD</li>
+		 <li class="user_zipcode">1800</li>
+		 <li class="user_phone_number">+880 343214324</li>
+		</ul>
+    </div>
+  	<input type="radio" checked="checked" name="shipping_address" class="circle_icon">
+  	<svg id="icon-icArrowRight" class="icArrowRight" viewBox="0 0 1024 1024"><path d="M635.882667 512L319.445333 808.661333l43.776 46.677334 341.333334-320a32 32 0 0 0 0-46.677334l-341.333334-320-43.776 46.677334L635.882667 512z"></path></svg>
+  </div>
+  <div class="shipping_destination_info flex align-center justify-between bb">
+    <div class="delete_icon_and_listing flex align-center w-100">
+    	<svg id="icon-icSubtractFill" class="icSubtractFill" viewBox="0 0 1024 1024"><path d="M925.909333 554.325333l-0.832 7.573334c-22.570667 191.402667-178.389333 344.96-370.752 364.010666-262.954667 26.026667-482.261333-193.28-456.234666-456.234666 19.306667-194.901333 176.682667-352.277333 371.584-371.584 262.933333-26.026667 482.261333 193.301333 456.234666 456.234666zM704 544v-64H320v64h384z"></path><path d="M936.533333 555.413333l-0.853333  .573334c-23.04 196.394667-182.912 353.984-380.266667 373.546666C285.717333 963.2 60.8 738.261333 87.488 468.565333c19.797333-199.893333 181.205333-361.301333 381.098667-381.098666 269.674667-26.709333 494.634667 198.250667 467.925333 467.925333z m-63.082666-13.184c18.261333-226.410667-171.370667-413.546667-398.570667-391.04-169.514667 16.768-306.922667 154.176-323.712 323.690667C128.448 704.426667 319.594667 895.573333 549.12 872.832c167.061333-16.554667 302.933333-150.229333 322.901333-316.373333l0.810667-7.338667 0.618667-6.890667z"></path></svg>
+		<ul class="shipping_details">
+		 <li class="user_name">SuMir</li>
+		 <li class="user_dist">Munshiganj</li>
+		 <li class="user_city">Dhaka</li>
+		 <li class="user_country">Dhaka, BD</li>
+		 <li class="user_zipcode">1800</li>
+		 <li class="user_phone_number">+880 343214324</li>
+		</ul>
+    </div>
+  	<input type="radio" name="shipping_address" class="circle_icon">
+  	<svg id="icon-icArrowRight" class="icArrowRight" viewBox="0 0 1024 1024"><path d="M635.882667 512L319.445333 808.661333l43.776 46.677334 341.333334-320a32 32 0 0 0 0-46.677334l-341.333334-320-43.776 46.677334L635.882667 512z"></path></svg>
+  </div>
+  <div class="shipping_destination_info flex align-center justify-between bb">
+    <div class="delete_icon_and_listing flex align-center w-100">
+    	<svg id="icon-icSubtractFill" class="icSubtractFill" viewBox="0 0 1024 1024"><path d="M925.909333 554.325333l-0.832 7.573334c-22.570667 191.402667-178.389333 344.96-370.752 364.010666-262.954667 26.026667-482.261333-193.28-456.234666-456.234666 19.306667-194.901333 176.682667-352.277333 371.584-371.584 262.933333-26.026667 482.261333 193.301333 456.234666 456.234666zM704 544v-64H320v64h384z"></path><path d="M936.533333 555.413333l-0.853333  .573334c-23.04 196.394667-182.912 353.984-380.266667 373.546666C285.717333 963.2 60.8 738.261333 87.488 468.565333c19.797333-199.893333 181.205333-361.301333 381.098667-381.098666 269.674667-26.709333 494.634667 198.250667 467.925333 467.925333z m-63.082666-13.184c18.261333-226.410667-171.370667-413.546667-398.570667-391.04-169.514667 16.768-306.922667 154.176-323.712 323.690667C128.448 704.426667 319.594667 895.573333 549.12 872.832c167.061333-16.554667 302.933333-150.229333 322.901333-316.373333l0.810667-7.338667 0.618667-6.890667z"></path></svg>
+		<ul class="shipping_details">
+		 <li class="user_name">Rimon</li>
+		 <li class="user_dist">Munshiganj</li>
+		 <li class="user_city">Dhaka</li>
+		 <li class="user_country">Dhaka, BD</li>
+		 <li class="user_zipcode">1800</li>
+		 <li class="user_phone_number">+880 343214324</li>
+		</ul>
+    </div>
+  	<input type="radio" name="shipping_address" class="circle_icon">
+  	<svg id="icon-icArrowRight" class="icArrowRight" viewBox="0 0 1024 1024"><path d="M635.882667 512L319.445333 808.661333l43.776 46.677334 341.333334-320a32 32 0 0 0 0-46.677334l-341.333334-320-43.776 46.677334L635.882667 512z"></path></svg>
+  </div>
+  <div class="shipping_destination_info flex align-center justify-between bb">
+    <div class="delete_icon_and_listing flex align-center w-100">
+    	<svg id="icon-icSubtractFill" class="icSubtractFill" viewBox="0 0 1024 1024"><path d="M925.909333 554.325333l-0.832 7.573334c-22.570667 191.402667-178.389333 344.96-370.752 364.010666-262.954667 26.026667-482.261333-193.28-456.234666-456.234666 19.306667-194.901333 176.682667-352.277333 371.584-371.584 262.933333-26.026667 482.261333 193.301333 456.234666 456.234666zM704 544v-64H320v64h384z"></path><path d="M936.533333 555.413333l-0.853333  .573334c-23.04 196.394667-182.912 353.984-380.266667 373.546666C285.717333 963.2 60.8 738.261333 87.488 468.565333c19.797333-199.893333 181.205333-361.301333 381.098667-381.098666 269.674667-26.709333 494.634667 198.250667 467.925333 467.925333z m-63.082666-13.184c18.261333-226.410667-171.370667-413.546667-398.570667-391.04-169.514667 16.768-306.922667 154.176-323.712 323.690667C128.448 704.426667 319.594667 895.573333 549.12 872.832c167.061333-16.554667 302.933333-150.229333 322.901333-316.373333l0.810667-7.338667 0.618667-6.890667z"></path></svg>
+		<ul class="shipping_details">
+		 <li class="user_name">Miron</li>
+		 <li class="user_dist">Munshiganj</li>
+		 <li class="user_city">Dhaka</li>
+		 <li class="user_country">Dhaka, BD</li>
+		 <li class="user_zipcode">1800</li>
+		 <li class="user_phone_number">+880 343214324</li>
+		</ul>
+    </div>
+  	<input type="radio" name="shipping_address" class="circle_icon">
+  	<svg id="icon-icArrowRight" class="icArrowRight" viewBox="0 0 1024 1024"><path d="M635.882667 512L319.445333 808.661333l43.776 46.677334 341.333334-320a32 32 0 0 0 0-46.677334l-341.333334-320-43.776 46.677334L635.882667 512z"></path></svg>
+  </div>
+ </section> <!------checkoutPage shipping Address modal close----->
+<!--checkoutPage shipping Address form modal into shipping address modal-->
+ <section class="checkoutPage_iar_shipping_modal px w-100" id="added_to_new_address_form">
+ 	<div class="shipping_modal_close_btn flex align-center py">
+ 	  <div class="flex align-center">
+ 	  	<svg id="icon_close" viewBox="0 0 1024 1024"><path d="M816.725333 168.085333L861.994667 213.333333 560.277333 515.029333l301.717334 301.696-45.269334 45.269334-301.696-301.717334L213.333333 861.994667l-45.248-45.269334L469.76 515.029333 168.085333 213.333333 213.333333 168.085333 515.029333 469.76z"></path></svg>
+ 	   <b>Added New Address</b>
+ 	  </div>	
+ 	</div>
+ 	<form action="">
+ 	  <input type="text" id="contact_name" placeholder="Contact Name" class="bb">
+ 	  <span id="contact_error_message"></span>
+ 	  <input type="number" id="userMobileNum" placeholder="Mobile" class="bb">
+ 	  <span id="userMobile_error_message"></span>
+ 	  <input type="text" id="userStreet" placeholder="Street address, P. O. box, etc." class="bb">
+ 	  <span id="streetAddress">Please enter a street address</span>
+ 	  <input type="text" id="optionalAddress" placeholder="Apt,Suite,Unit,etc.（Optional）" class="bb">
+ 	  <input type="text" value="Bangladesh" disabled="disabled" class="bb">
+ 	  <input type="text" id="userDivision" placeholder="Divisiton / Distrits / Upzila" class="bb">
+ 	  <span id="upzila">Please enter a division or distrits or upzila name</span>
+ 	  <input type="text" id="userCity" placeholder="City" class="bb">
+ 	  <span id="userCity_error_message">Please enter a city name</span>
+ 	  <input type="number" id="userZipCode" placeholder="Zip / Postal code" class="bb">	
+ 	  <span id="userZipcode_error_message"></span>
+ 	  <div class="flex align-center justify-between bb">
+ 	  	<span class="w-100">Set as default shipping address</span>
+ 	    <input type="checkbox" name="" id="chk">
+ 	  </div>
+ 	  <input type="submit" id="submitBtn" value="Save">
+ 	</form>
+ </section>
+<section class="checkoutPage_iar_payment_method px">
+	<div class="payment_getway flex bb">
+		<span>Payment</span>
+		<div class="payment_card_wrapper w-100">
+		  <div id="checkoutPage_payment_modal_open" class="payment_card_inner_div flex justify-between align-center bb">
+		  	<div> 
+			  <p>Pay with Credit / Debit Card</p>
+			  <figure><img src="img/paymentMethod.png" alt="all payment method"></figure>
+		    </div>
+		      <input class="circle_icon" id="circle_icon" name="payment" type="radio">
+		  </div> 
+		  <div class="payment_card_inner_div flex justify-between align-center">
+		  	<div>
+			  <p>Pay with Credit / Debit Card</p>
+			  <figure><img src="img/download.png" alt="other payment method"></figure>
+		    </div>
+		    <input class="circle_icon" name="payment" type="radio">
+		  </div>
+		</div>
+	</div>
+</section> <!-----payment method close------->
+<!--checkout page payment modal-->
+<section class="checkoutPage_iar_shipping_modal px pt w-100" id="checkoutPage_payment_modal">
+ 	<div class="shipping_modal_close_btn flex justify-between align-center">
+ 	  <div class="flex align-center">
+ 	  	<svg class="icon-icClose" viewBox="0 0 1024 1024"><path d="M816.725333 168.085333L861.994667 213.333333 560.277333 515.029333l301.717334 301.696-45.269334 45.269334-301.696-301.717334L213.333333 861.994667l-45.248-45.269334L469.76 515.029333 168.085333 213.333333 213.333333 168.085333 515.029333 469.76z"></path></svg>
+ 	   <b>Add a Credit/Debit Card</b>
+ 	  </div>	
+ 	  <p class="btn_close">Done</p>
+ 	</div>
+ 	<form class="payment_debit_card">
+ 	 <div class="input_fields">
+ 	   <div><input id="paymentDebitCardNum" type="text" value="" placeholder="0000 0000 0000 0000"></div>
+ 	 </div>
+ 	 <div id="payment_card_info" class="flex justify-between">
+ 	   <span>
+ 	   	 Card Holder
+ 	   	 <input id="paymentCardHolderName" type="text" placeholder="Name Here"/>
+ 	   </span>
+ 	   <span>
+ 	   	 Expires
+ 	   	 <input id="paymentExpireDate" type="tel" placeholder="MM/YY" maxlength="5">
+ 	   </span>
+ 	 </div>
+ 	</form>
+ 	<p id="paymentErrorMsg" class="text-center">Please enter valid dabit number</p>
+ 	<div class="payment_card_footer flex">
+ 		<button class="next_btn flex">Next <svg id="icon-icArrowRight" viewBox="0 0 1024 1024"><path d="M635.882667 512L319.445333 808.661333l43.776 46.677334 341.333334-320a32 32 0 0 0 0-46.677334l-341.333334-320-43.776 46.677334L635.882667 512z"></path></svg></button>
+ 	</div>
+ </section>
+<!--discount section start-->
+<section class="checkoutPage_iar_discount px">
+ <div id="discount_modal_btn" class="checkoutPage_iar_discount_row flex align-center bb py">
+ 	<span>Discount</span>
+ 	<div class="checkoutPage_iar_code_entry flex justify-between align-center w-100">
+ 		<span>Enter code here</span>
+ 		<svg id="icon-icArrowRight" viewBox="0 0 1024 1024"><path d="M635.882667 512L319.445333 808.661333l43.776 46.677334 341.333334-320a32 32 0 0 0 0-46.677334l-341.333334-320-43.776 46.677334L635.882667 512z"></path></svg>
+ 	</div>
+ </div>
+ <div class="checkoutPage_iar_payTotally flex justify-between">
+  <span class="totalPay">Pay Totally</span>
+  <strong>Us $<span id="totalPayVal">127.56</span></strong>
+ </div>
+</section> <!------discount section close--->
+<!--discount modal-->
+<section class="checkoutPage_iar_shipping_modal px pt w-100" id="discount_modal">
+ 	<div class="shipping_modal_close_btn flex align-center">
+ 	  <svg class="icon-icClose" viewBox="0 0 1024 1024"><path d="M816.725333 168.085333L861.994667 213.333333 560.277333 515.029333l301.717334 301.696-45.269334 45.269334-301.696-301.717334L213.333333 861.994667l-45.248-45.269334L469.76 515.029333 168.085333 213.333333 213.333333 168.085333 515.029333 469.76z"></path></svg>
+ 	  <h4>Available Discounts</h4>	
+ 	</div>
+ 	<p>We’ve automatically applied the optimal discounts for you. You can check your coupons here.</p>
+ 	<div class="shipping_info">
+ 	 <strong>Promo Code</strong>
+ 	 <div class="flex align-center justify-between bb">
+ 	 	<input type="text" id="promoCode" placeholder="Enter code here">
+ 	 	<span id="apply_promo_code_btn">Apply</span>
+ 	 </div>
+ 	</div>
+ </section>
+<!--paynow footer start-->
+ <footer class="checkoutPage_iar_paynow px pb w-100 text-center">
+  <button type="button" id="payNowBtn">Pay Now</button>
+ </footer>
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- <script src="../AliExpress_FAQ_page/js/slim.min.js"></script>-->
+ <script src="js/checkoutPage.js"></script>
+</body>
+</html>

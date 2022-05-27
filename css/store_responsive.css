@@ -1,0 +1,101 @@
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+    .sd-top h6{
+        font-size: 15px;
+    }
+    .sd-top{
+        font-size: 10px;
+    }
+    .sd-bottom span{
+        font-size: 10px;
+    }
+    .sd-bottom .stylezone{
+        height: 10px;
+    }
+    .follow-btn {
+	padding: 4px 10px;
+	font-size: 15px;
+	border-radius: 26px;
+    }
+    .save-left {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: calc(15px + (25 - 10) * ((100vw - 500px) / (1600 - 300)));
+    }
+    .store-nav-wrapper .home-page {
+	font-size: 20px;
+    }
+    .store-nav-wrapper .all-times {
+	font-size: 20px;
+    }
+    .home-page span {
+	width: 30px;
+    }
+    #options-layout {
+	height: 245.067px;
+	width: 228.507px;
+    }
+    .options-wrapper {
+	padding-top: 10px;
+	padding-left: 5px;
+    }
+    .single-option {
+	height: 60px;
+    }
+    .single-icon {
+	height: 20px;
+	margin-right: 10px;
+    }
+    .options-text {
+	font-size: 20px;
+    }
+    .single-option {
+	height: 55px;
+    }
+    #input-field {
+	height: 40px;
+    font-size: 19px;
+    padding-left: 50px;
+    }
+    .store-header-layout {
+	margin-top: 56px;
+    }
+    .store-header-wrapper .s-logo {
+	height: 40.912px;
+	width: 40.912px;
+    }
+    .store-details {
+	margin-left: 15px;
+    }
+    .left-arrow, .three-dots {
+	font-size: 20px;
+    }
+    .sd-top-icon {
+	padding: 0;
+    }
+    .store-nav-layout {
+    padding-top: 0;
+    }
+    .search-icon {
+    font-size: 17px;
+    line-height: 44px;
+    left: 23px;
+    }
+    .right-arrow {
+	font-size: calc(20px + (30 - 10) * ((100vw - 700px) / (1600 - 300)));
+    }
+    /* footer-menu */
+    .single-menu {
+        height: 80px;
+    }
+    .single-menu img {
+        width: 50px;
+    }
+    .single-menu span {
+        font-size: 15px;
+    }
+    .more-product-wrapper2 {
+	padding-bottom: 55px;
+    }
+    /* footer-menu-end */
+}

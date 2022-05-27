@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sign and Register</title>
+	<script src="https://kit.fontawesome.com/993b1433c6.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.buyer_login_and_regitration.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+<style>
+	body{
+		padding-bottom: 100px;
+	}
+</style>
+
+<body>
+	<section id="hearder">
+		<div class="container">
+			<div class="ali_logo">
+				<a href="index.html" class="">
+					<img src="images/logo.png">
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="sign_register">
+		<div class="container ">
+			<div class="sign_center">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs p-0 main_tap border-0">
+					<li class="nav-item m-0  ">
+						<a class="nav-link active border-0 register_style  "  href="#home">REGISTER</a>
+					</li>
+					<li class="nav-item m-auto">
+						<a class="nav-link border-0 register_style"  href="#menu1">SIGN IN</a>
+					</li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content border-0 ">
+					<div id="home" class="container tab-pane active"><br>
+						<div class="regi_paragraph">
+							<img src="images/images/ticket.webp">
+							<span class="cap">Register now to get $3 New User Coupon.</span>
+						</div>
+
+						<form action="" class="SignUpForm" onsubmit="return myformsubmit()">
+							<div class="form-group main_input_box">
+								<input type="text" name="" id="email" class="form-control email_first" placeholder="Email" value="">
+								<p id="email-Message" class="signup_error m-0 p-0"></p>
+							</div>
+							<div class="form-row">
+								<div class="form-group main_input_box col-lg-12 m-0">
+									<input type="password" id="password" placeholder="Password" class="form-control pass_first">
+									<i class="fas fa-eye" id="eyeicn1" onclick="showhide1()"></i>
+									<p id="password_Message" class="signup_error m-0 p-0"></p>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-lg-12">
+									<a href="">
+										<button class="btn btn-danger my_register_btn" id="capture_show">Create Account</button>
+									</a>
+									<p class="btn_bottom">By creating an account, you agree to the<br><a href="">AliExpress.com Free Membership Agreement</a> and<br> <a href="">Privacy Policy</a></p>
+								</div>
+							</div>
+						</form>
+
+						<div class="quick_access ">
+							<h4>Quick access with</h4>
+							<div class="social_icon">
+								<a href=""><img src="images/images/1.png" class="img-fluid"></a>
+								<a href=""><img src="images/images/2.png" class="img-fluid"></a>
+								<a href=""><img src="images/images/3.png" class="img-fluid"></a>
+								<a href=""><img src="images/images/4.png" class="img-fluid"></a>
+							</div>
+							<div class="social_icon2 pt-3" id="sco">
+								<a href=""><img src="images/images/5.png" class="img-fluid"></a>
+								<a href=""><img src="images/images/6.png" class="img-fluid"></a>
+								<a href=""><img src="images/images/7.png" class="img-fluid"></a><br>
+							</div>
+							<input type="button" value="Show" id="mybtn" class="mybtn2">
+						</div>
+					</div>
+
+					<div id="menu1" class="container tab-pane "><br>
+						<form action="" class="SignUpForm" onsubmit="return myformsubmit2()">
+							<div class="form-group main_input_box">
+								<input type="text" id="email2" class="form-control email_first" placeholder="Email address or Member ID" value="">
+								<p id="email-Message2" class="signup_error m-0 p-0"></p>
+							</div>
+							<div class="form-row">
+								<div class="form-group main_input_box col-lg-12 m-0">
+									<input type="password" id="password2" placeholder="Password" class="form-control pass_first">
+									<i class="fas fa-eye" id="eyeicn2" onclick="showhide2()"></i>
+									<p id="password_Message2" class="signup_error m-0 p-0"></p>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-lg-12">
+									<button class="btn btn-danger my_register_btn">Sign in</button>
+								</div>
+							</div>
+						</form>
+
+						<div class="quick_access ">
+							<h4>Quick access with</h4>
+							<div class="social_icon">
+								<a href=""><img src="images/images/1.png" class="img-fluid"></a>
+								<a href=""><img src="images/images/2.png" class="img-fluid"></a>
+								<a href=""><img src="images/images/3.png" class="img-fluid"></a>
+								<a href=""><img src="images/images/4.png" class="img-fluid"></a>
+							</div>
+							<div class="social_icon2  pt-3" id="sco2">
+								<a href=""><img src="images/images/5.png" class="img-fluid"></a>
+								<a href=""><img src="images/images/6.png" class="img-fluid"></a>
+								<a href=""><img src="images/images/7.png" class="img-fluid"></a><br>
+							</div>
+							<input type="button" value="Show" id="mybtn2" class="mybtn2">
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<script src="js/slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.buyer_login_and_registration.js"></script>
+
+</body>
+
+</html>

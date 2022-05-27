@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #fff;
+    font-size: 12px;
+    color: #000;
+}
+
+a {
+    color: #3a3e4a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #3a3e4a;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.m-coatgory-left {
+    flex-shrink: 0;
+    width: 105px !important;
+    background: #fbfbfb;
+    height: 100%;
+    overflow: scroll;
+    padding-left: 15px;
+    padding-right: 0 !important;
+    position: fixed;
+    z-index: 10000;
+}
+
+.m-coatgory-right {
+    max-width: 90% !important;
+    margin-left: 135px !important;
+    padding-right: 10px;
+}
+
+.m-coatgory-left .nav .nav-link {
+    position: relative;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 80px;
+    padding: 0 8px;
+    background: transparent;
+    cursor: auto;
+}
+
+.m-coatgory-left .nav .nav-link.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #000;
+}
+
+.horizontal-row {
+    height: 1px;
+    -ms-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    background: #ebebec;
+}
+
+.m-coatgory-left .nav .nav-link .nav-img {
+    width: 32px;
+    height: 32px;
+}
+
+.m-coatgory-left .nav .nav-link .nav-span {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    margin-top: 4px;
+    font-size: 10px;
+    text-align: center;
+    color: #3a3e4a;
+    word-break: break-word;
+    overflow: hidden;
+}
+
+.-Aob2 {
+    display: block;
+    height: 20px;
+    margin: 16px 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.tab-content-imgdiv {
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    max-width: 32.333333%;
+}
+
+.pjhmq-product-img {
+    /* position: relative; */
+    width: 100%;
+    height: 410px;
+    border-radius: 4px;
+}
+
+.category-content-a {
+    position: relative;
+    /* width: 100%;
+    height: 100%; */
+    display: block;
+}
+
+.category-content-a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.04);
+    /* background: #000000; */
+    background-size: cover;
+    z-index: 999999;
+}
+
+.EMxoF {
+    /* display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; */
+    margin-top: 2px;
+    height: 30px;
+    text-align: center;
+    font-size: 10px;
+    /* overflow: hidden; */
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    width: 100%;
+    z-index: 9999999999999999999;
+}
+
+.collapse-category {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-right: 23px;
+}
+
+#flip {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#panel1,
+#panel2,
+#panel3,
+#panel4,
+#panel5,
+#panel6 {
+    display: none;
+}
+
+.horxp {
+    margin-right: 10px;
+}
+
+/* fotter menu */
+/* .bottom-navigation{
+	width: 80% !important;
+    transform: scale(1) !important;
+    position: absolute !important;
+    bottom: -7px !important;
+    right: -7px !important;
+} */
+
+
+@media only screen and (max-width: 320px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .pjhmq-product-img {
+        height: 70px !important;
+    }
+    .m-coatgory-right {
+        max-width: 90% !important;
+        margin-left: 128px !important;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .tab-content-imgdiv {
+        margin-right: 8px;
+        max-width: 29.333333%;
+    }
+
+    .pjhmq-product-img {
+        height: 95px;
+    }
+    .m-coatgory-right {
+        max-width: 90% !important;
+        margin-left: 128px !important;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .tab-content-imgdiv {
+        margin-right: 8px;
+        max-width: 31.333333%;
+    }
+
+    .pjhmq-product-img {
+        height: 200px;
+    }
+}

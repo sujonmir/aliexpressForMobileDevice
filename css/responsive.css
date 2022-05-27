@@ -1,0 +1,65 @@
+
+@media only screen and  (max-width: 991px) {
+  .ali_logo{
+	  text-align:center;
+  }
+  .sign_center{width:100% !important;}
+  .container{max-width: 100% !important;margin:0 !important}
+  .main_input_box{height: auto;}
+  .main_input_box input {
+		height: auto;
+		padding: 30px 20px;
+		font-size: 42px !important;
+		margin: 25px 0;
+	}
+  .cap{font-size:28px !important;}
+  .regi_paragraph{margin-top:30px !important;display:inline-block;}
+  .pass_first{margin-bottom:20px;}
+  .main_tap{width:100% !important;text-align:center;}
+  .main_tap li{width:50%;}
+  .register_style  {font-size:36px;}
+  .ali_logo a img{min-width:300px !important;}
+  .my_register_btn{font-size:38px;padding:24px 0; height:auto !important;}
+  .btn_bottom{font-size:32px;line-height:1.5;padding-top:30px}
+  .quick_access h4{font-size:38px;font-weight:bold;margin-bottom:50px;}
+  .social_icon, .social_icon2 {text-align:center;}
+  .social_icon a img, .social_icon2 a img {width:80px !important}
+  .mybtn2{font-size:24px}
+  .signup_error{font-size:32px;}
+  .regi_paragraph img{width:40px; height:auto;}
+  .email_first{margin-top:20px;}
+    #eyeicn1 {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 5%;
+		color: #666;
+		font-size:48px;
+	}
+	#eyeicn2 {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 5%;
+		color: #666;
+		font-size:48px;
+	}
+	/* account page */
+	.owl-dot {
+		width: 8px;
+		height: 2px;
+		background: white !important;
+		margin-left: 5px !important;
+	}
+	
+}
+
+ @media (max-width: 767px) {
+  .container, .container-md, .container-sm {
+		/* max-width: 100% !important; */
+	}
+}
+@media only screen and (max-width: 575px) {
+  /* .register_style   {font-size: 36px !important;} */
+  .email-Message{font-size:24px;}
+}
